@@ -1,6 +1,6 @@
-import http from 'http';
+from * as http from 'http';
 
-const server = http.createServer((req, res) => {
+const server = http.createServer((request, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end('Hello World!');
 });
