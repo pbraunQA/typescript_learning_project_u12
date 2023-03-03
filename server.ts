@@ -1,6 +1,6 @@
-from * as http from 'http';
+'from * as http from "http";'
 
-const server = http.createServer((request, res) => {
+const server = http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end('Hello World!');
 });
