@@ -1,23 +1,5 @@
 {
-  "name": "typescript_learning_project_u12",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "testU12"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pbraunQA/typescript_learning_project_u12.git"
-  },
-  "author": "PAB",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pbraunQA/typescript_learning_project_u12/issues"
-  },
-  "homepage": "https://github.com/pbraunQA/typescript_learning_project_u12#readme",
-  "devDependencies": {
-    "@types/node": "^18.14.5",
-    "typescript": "^4.9.5",
-    "http": "0.0.1-security"
+  "dependencies": {
+    "typescript": "^4.9.5"
+  }
 }
