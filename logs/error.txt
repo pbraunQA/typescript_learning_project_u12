@@ -1,12 +1,12 @@
 pbraun@ubuntu2004-pab:~/_dev/typescript_learning_project_u12$ node server.ts
-Debugger listening on ws://127.0.0.1:44775/601f1f6b-772e-48b4-b3b3-5636d9929035
+Debugger listening on ws://127.0.0.1:44827/b3323146-12d6-4e7f-ba20-70dd15a5cbc2
 For help, see: https://nodejs.org/en/docs/inspector
 Debugger attached.
 /home/pbraun/_dev/typescript_learning_project_u12/server.ts:1
-import http from "http";
-       ^^^^
+import * as http from 'http';
+       ^
 
-SyntaxError: Unexpected identifier
+SyntaxError: Unexpected token *
     at Module._compile (internal/modules/cjs/loader.js:723:23)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
     at Module.load (internal/modules/cjs/loader.js:653:32)
