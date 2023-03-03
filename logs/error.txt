@@ -1,18 +1,27 @@
-pbraun@ubuntu2004-pab:~/_dev/typescript_learning_project_u12$ node server.ts
-Debugger listening on ws://127.0.0.1:44827/b3323146-12d6-4e7f-ba20-70dd15a5cbc2
+pbraun@ubuntu2004-pab:~/_dev/typescript_learning_project_u12$ npx tsc
+Debugger listening on ws://127.0.0.1:44995/675c07f7-dd97-4cbe-952e-ab60959577b6
 For help, see: https://nodejs.org/en/docs/inspector
 Debugger attached.
-/home/pbraun/_dev/typescript_learning_project_u12/server.ts:1
-import * as http from 'http';
-       ^
+Debugger listening on ws://127.0.0.1:39351/c1f0a46c-d54f-4204-81d1-2c4bd3efff99
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+server.ts:1:18 - error TS2307: Cannot find module 'http' or its corresponding type declarations.
 
-SyntaxError: Unexpected token *
-    at Module._compile (internal/modules/cjs/loader.js:723:23)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:789:10)
-    at Module.load (internal/modules/cjs/loader.js:653:32)
-    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
-    at Function.Module._load (internal/modules/cjs/loader.js:585:3)
-    at Function.Module.runMain (internal/modules/cjs/loader.js:831:12)
-    at startup (internal/bootstrap/node.js:283:19)
-    at bootstrapNodeJSCore (internal/bootstrap/node.js:623:3)
+1 import http from 'http';
+                   ~~~~~~
+
+server.ts:6:35 - error TS7006: Parameter 'req' implicitly has an 'any' type.
+
+6 const server = http.createServer((req, res) => {
+                                    ~~~
+
+server.ts:6:40 - error TS7006: Parameter 'res' implicitly has an 'any' type.
+
+6 const server = http.createServer((req, res) => {
+                                         ~~~
+
+
+Found 3 errors in the same file, starting at: server.ts:1
+
+Waiting for the debugger to disconnect...
 Waiting for the debugger to disconnect...
