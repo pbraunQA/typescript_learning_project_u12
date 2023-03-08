@@ -1,8 +1,8 @@
 pbraun@ubuntu2004-pab:~/_dev/typescript_learning_project_u12$ npx tsc
-Debugger listening on ws://127.0.0.1:44995/675c07f7-dd97-4cbe-952e-ab60959577b6
+Debugger listening on ws://127.0.0.1:34533/74996d8e-2613-4b9d-868b-9d4c672f1917
 For help, see: https://nodejs.org/en/docs/inspector
 Debugger attached.
-Debugger listening on ws://127.0.0.1:39351/c1f0a46c-d54f-4204-81d1-2c4bd3efff99
+Debugger listening on ws://127.0.0.1:46419/cb1e674d-be21-4fcc-bcce-d467e07f0e40
 For help, see: https://nodejs.org/en/docs/inspector
 Debugger attached.
 server.ts:1:18 - error TS2307: Cannot find module 'http' or its corresponding type declarations.
