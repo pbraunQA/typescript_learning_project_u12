@@ -1,27 +1,39 @@
-pbraun@ubuntu2004-pab:~/_dev/typescript_learning_project_u12$ npx tsc
-Debugger listening on ws://127.0.0.1:34533/74996d8e-2613-4b9d-868b-9d4c672f1917
+pbraun@ubuntu2004-pab:~/_dev/typescript_learning_project_u12$ npx jest
+Debugger listening on ws://127.0.0.1:33275/c2927fc4-1300-4551-a42f-089b5bc90b25
 For help, see: https://nodejs.org/en/docs/inspector
 Debugger attached.
-Debugger listening on ws://127.0.0.1:46419/cb1e674d-be21-4fcc-bcce-d467e07f0e40
+Debugger listening on ws://127.0.0.1:44541/4bcd3ff4-0c92-454e-a9f2-b42789d2e1ce
 For help, see: https://nodejs.org/en/docs/inspector
 Debugger attached.
-server.ts:1:18 - error TS2307: Cannot find module 'http' or its corresponding type declarations.
+ FAIL  test/index.test.ts
+  ● Test suite failed to run
 
-1 import http from 'http';
-                   ~~~~~~
+    Jest encountered an unexpected token
 
-server.ts:6:35 - error TS7006: Parameter 'req' implicitly has an 'any' type.
+    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.
 
-6 const server = http.createServer((req, res) => {
-                                    ~~~
+    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.
 
-server.ts:6:40 - error TS7006: Parameter 'res' implicitly has an 'any' type.
+    By default "node_modules" folder is ignored by transformers.
 
-6 const server = http.createServer((req, res) => {
-                                         ~~~
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.
+     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
 
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/configuration
+    For information about custom transformations, see:
+    https://jestjs.io/docs/code-transformation
 
-Found 3 errors in the same file, starting at: server.ts:1
+    Details:
 
-Waiting for the debugger to disconnect...
-Waiting for the debugger to disconnect...
+    /home/pbraun/_dev/typescript_learning_project_u12/test/index.test.ts:1
+    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,jest){import { helloWorld } from "../src/index";
+                                                                                      ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1495:14)

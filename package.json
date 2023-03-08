@@ -1,0 +1,24 @@
+{
+  "name": "typescript_learning_project_u12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbraunQA/typescript_learning_project_u12.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pbraunQA/typescript_learning_project_u12/issues"
+  },
+  "homepage": "https://github.com/pbraunQA/typescript_learning_project_u12#readme",
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "jest": "^29.5.0"
+  }
+}
